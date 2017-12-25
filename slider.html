@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="slider.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"/>
+    <title></title>
+</head>
+<body >
+    <div id="slider">
+        <div>
+            <figure>
+                <img src="images/banner1.jpg" alt=""/>
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="images/banner2.jpg" alt=""/>
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="images/banner3.jpg" alt=""/>
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <img src="images/banner4.jpg" alt=""/>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+      <!--  <div>
+            <span class="fa fa-circle-thin"></span>
+        </div>-->
+    </div>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="slider.js"></script>
+    <script>
+        //API：
+        /*配置项:
+         * dian:left,right
+         * speed:"fast","normal","slow"
+         * autoplay:true
+         * */
+//        $("#slider").init({
+//            dian:left
+//        });
+        replay({
+            "type":"slider"//,//slider(滑动) fade（淡入淡出）  blinds(百叶窗)
+      //      "width":"",
+        //    "height":"",
+        //    "transitionTime":"",//秒数
+         //   "replayTime":"",//秒数
+          //  "autoplay":"",//自动轮播 true/false
+         //   "dian":""//点的形状：square方形、rhombus菱形、circle圆形
+        })
+    </script>
+</body>
+</html>
